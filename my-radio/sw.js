@@ -1,0 +1,1 @@
+self.addEventListener("install",s=>{const e="/my-radio";s.waitUntil(caches.open("my-radio-pwa-cache").then(s=>s.addAll([`${e}/`,`${e}/index.html`,`${e}/script.js`,`${e}/styles.css`])))});
