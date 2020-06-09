@@ -111,6 +111,15 @@
             }
         },
         {
+            "name": "Karnaval",
+            "url": "https://online.radiokarnaval.ru/karnaval",
+            "title": {
+                "url": "https://radiokarnaval.ru/data/music/radiokarnaval.json",
+                "artist": "0.a",
+                "song": "0.s"
+            }
+        },
+        {
             "name": "NRJ",
             "url": "https://pub0201.101.ru/stream/air/aac/64/99",
             "title": {
