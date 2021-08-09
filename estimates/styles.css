@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+    font-family: system-ui, sans-serif;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    overflow: hidden;
+    
+    position: fixed;
+    bottom: 1rem;
+    z-index: 10;
+
+    text-align: center;
+}
+
+.panel > a {
+    flex: 1 0 0%;
+    width: auto;
+    padding: 0.5rem;
+    
+    position: relative;
+    
+    color: ButtonText;
+    text-decoration: none;
+}
+.panel > a:first-child {
+    padding-left: 1rem;
+}
+.panel > a:last-child {
+    padding-right: 1rem;
+}
+
+.slides {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 2rem;
+    
+    position: relative;
+    
+    font-size: 13rem;
+
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+}

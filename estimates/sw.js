@@ -1,0 +1,1 @@
+self.addEventListener("install",a=>{const e="/estimates";a.waitUntil(caches.open("estimates-pwa-cache").then(a=>a.addAll([`${e}/`,`${e}/index.html`,`${e}/styles.css`])))});
