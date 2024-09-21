@@ -111,6 +111,10 @@
             }
         },
         {
+            "name": "Detifm",
+            "url": "https://srv12.gpmradio.ru:8443/stream/air/aac/64/199"
+        },
+        {
             "name": "NRJ",
             "url": "https://pub0201.101.ru/stream/air/aac/64/99",
             "title": {
